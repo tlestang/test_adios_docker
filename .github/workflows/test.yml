@@ -11,5 +11,6 @@ jobs:
     container:
       image: ornladios/adios2:release_28-ubuntu-bionic
     steps:
+      - uses: actions/checkout@v3
       - name: Say hello
-        run: echo "Hello"
+        run: cat dummy_file.txt
