@@ -1,0 +1,9 @@
+name: a test workflow
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: ornladios/adios2:release_28-ubuntu-bionic
+    steps:
+      - name: Say hello
+        run: echo "Hello"
